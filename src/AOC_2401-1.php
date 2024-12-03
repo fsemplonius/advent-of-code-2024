@@ -1,7 +1,6 @@
 <?php
 
 //
-// Based on shoelace formula
 //
 include 'Puzzle_2401.php';
 $input = explode("\r\n", $s1);
