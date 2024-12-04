@@ -2,12 +2,6 @@
 
 include 'Puzzle_2404.php';
 $input = explode("\r\n", $s1);
-//
-// Please note that php does not handle backslashes correctly (I think)
-// so in the input you need to substitude \\ by \\\\
-//
-// Build floor and empty floorCopy
-//
 $maze = $stack = $allLoc = array ();
 $strt = strlen($input[1]);
 $eLine = str_repeat('#', $strt);
@@ -16,7 +10,6 @@ while ($s1 = next($input)) {
   $maze[] = '#'.$s1.'#';
 }
 $maze[] = $maze[0];
-
 
 $tot = 0;
 $xmas = 'XMAS';
