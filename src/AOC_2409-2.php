@@ -10,16 +10,13 @@ $fileSpace = array ();
 $i = $id = 0;
 $flip = true;
 while ($s1[$i] != 'e') {
-  if ($flip) {
+  if ($flip)
     $fileSpace[] = array($id++, $s1[$i++]);
-  }
   else
     $fileSpace[] = array($s1[$i++]);
   $flip = !$flip;
 }
 
-$fillUp = array ();
-$nfree = 0;
 $ipfile = count($fileSpace) + 1;
 while(($ipfile-=2) > 0) {
   for ($i=1; $i<$ipfile; $i+=2) {
