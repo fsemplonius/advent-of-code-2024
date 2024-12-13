@@ -1,10 +1,8 @@
 <?php
 
-// Make this boolean true to run part 2
-
 $s1 = '125 17';
 $s1 = '890 0 1 935698 68001 3441397 7221 27';
-$numBlinks = 75;
+$numBlinks = 75;		// number of blinks
 $stones = array ();
 $stnum = array (0);
 
@@ -13,7 +11,7 @@ foreach (explode(' ', $s1) as $stone) {
   $stnum[] = 1;
 }
 
-for ($i=0; $i<$numBlinks; $i++) {		// number of blinks
+for ($i=0; $i<$numBlinks; $i++) {
   $newStones = array ();
   $newStnum = array (0);
   foreach ($stones as $stone) {
